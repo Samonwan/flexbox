@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    <style>
+        @media (min-width: 768px) {
+            /* This @media use to setting for mobile or small window browser */
+            .container-1 {
+            display: flex;
+
+            /* flex-direction: column; */
+
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /*This function change size of box up to value in it (normally its will be same size evey box by defualt it means align-items: stretch;)*/
+
+            }
+            .container-2 {
+            display: flex;
+
+            justify-content: space-between;
+            /* justify-content: flex-start; 
+            This one is default setting*/
+            /* justify-content: center; */
+            /* justify-content: space-around;
+            space around give margin aound outside too */
+            }
+
+        }
+
+        .container-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .container-1 div, .container-2 div, .container-3 div {
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+        .box-1 {
+            flex: 2;
+            order: 2;
+
+        }
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+        .container2-box {
+            /* width: 20%; */
+            flex-basis: 30%;
+            /*width and flex-basis give same result just flex-basis is kinda more flex thing*/
+        }
+
+        .container3-box {
+            flex-basis: 10%;
+        }
+    </style>
+
+    <div class="container-1">
+        <div class="box-1">
+            <h3>box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="box-2">
+            <h3>box 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi. Ducimus id blanditiis voluptatum autem quia sapiente! Illo deserunt voluptatem ut cumque dolore culpa nihil, explicabo cum, ipsum placeat obcaecati?</p>
+        </div>
+        <div class="box-3">
+            <h3>box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi. Ducimus id blanditiis voluptatum autem quia sapiente! Illo deserunt voluptatem ut cumque dolore culpa nihil, explicabo cum, ipsum placeat obcaecati?</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container2-box">
+            <h3>box 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi. Ducimus id blanditiis voluptatum autem quia sapiente! Illo deserunt voluptatem ut cumque dolore culpa nihil, explicabo cum, ipsum placeat obcaecati?</p>
+        </div>
+        <div class="container2-box">
+            <h3>box 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi. Ducimus id blanditiis voluptatum autem quia sapiente! Illo deserunt voluptatem ut cumque dolore culpa nihil, explicabo cum, ipsum placeat obcaecati?</p>
+        </div>
+        <div class="container2-box">
+            <h3>box 6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="container3-box">
+            <h3>box 7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 8</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 10</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 11</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 12</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 13</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 14</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="container3-box">
+            <h3>box 15</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+</body>
+</html>
